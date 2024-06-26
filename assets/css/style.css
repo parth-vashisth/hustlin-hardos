@@ -144,8 +144,18 @@
     /* padding-top: 10px;
     padding-bottom: 10px; */
     padding: 10px;
-        border-collapse: collapse;
+    border-collapse: collapse;
 }
-.br-lft{
+
+.br-lft {
     border-left: none;
+}
+
+.big-head {
+    font-family: ModernoFBComp;
+    font-size: var(--fs-157);
+    font-weight: 400;
+    line-height: 188.4px;
+    text-align: center;
+    color: var(--color-black);
 }
