@@ -25,3 +25,14 @@ $('.parentslider').slick({
         }
     ]
 });
+const btnsub = document.querySelector(".minus");
+const btnadd = document.querySelector(".plus");
+const number = document.querySelector(".hndrd");
+
+btnsub.addEventListener("click", function () {
+    number.innerHTML = +number.innerHTML - 1;
+});
+
+btnadd.addEventListener("click", function () {
+    number.innerHTML = +number.innerHTML + 1;
+});

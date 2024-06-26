@@ -224,18 +224,105 @@
 }
 
 .diam {
-    font-family: "Noto Serif",serif;
+    font-family: "Noto Serif", serif;
     font-size: var(--fs-16);
     color: var(--color-black);
     font-weight: 400;
     line-height: 21.79px;
     text-align: left;
 }
-.childslider{
+
+.childslider {
     width: 380px;
     height: 257px;
     padding: 20px;
 }
-.br-top{
+
+.br-top {
     border-top: none;
+}
+
+.br-bottom {
+    border-bottom: none;
+}
+
+/* ----------minting----------- */
+.mt-88 {
+    margin-top: 88px;
+}
+
+.pr-107 {
+    padding-right: 107px;
+}
+
+.plus,
+.minus {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.hndrd {
+    font-family: "Noto Serif", serif;
+    font-size: var(--fs-36);
+    font-weight: 600;
+    line-height: 49.03px;
+    text-align: center;
+    color: var(--color-black);
+    padding-left: 24px;
+    padding-right: 24px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.hndrdbox {
+    width: 238px;
+    height: 53px;
+    padding: 2px 24px 2px 24px;
+    gap: 24px;
+    border: 2px solid black;
+}
+
+.mint {
+    font-family: "Noto Serif", serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.07px;
+    text-align: center;
+    width: 111px;
+    background-color: var(--color-yellow);
+    height: 43px;
+    padding: 12px 16px 12px 16px;
+    margin-top: 35px;
+}
+
+.left {
+    font-family: "Noto Serif", serif;
+    font-size: var(--fs-18);
+    font-weight: 600;
+    line-height: 24.52px;
+    text-align: left;
+    color: var(--color-green);
+    margin-top: 36px;
+}
+
+.fort {
+    font-family: "Noto Serif", serif;
+    font-size: var(--fs-36);
+    font-weight: 600;
+    line-height: 49.03px;
+    text-align: left;
+    color: var(--color-red);
+}
+
+.most {
+    font-family: " Noto Serif", serif;
+    font-size: var(--fs-16);
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: left;
+    color: var(--color-black);
+    /* width: 438px; */
 }
