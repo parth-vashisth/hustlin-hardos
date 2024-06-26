@@ -203,3 +203,39 @@
     padding-left: 43px;
     padding-right: 43px;
 }
+
+/* -------latest newss------- */
+.two {
+    font-family: "Noto Serif", serif;
+    font-size: var(--fs-14);
+    font-weight: 400;
+    line-height: 19.07px;
+    text-align: left;
+    color: var(--color-black);
+}
+
+.etam {
+    font-family: "Noto Serif", serif;
+    font-size: var(--fs-36);
+    font-weight: 600;
+    line-height: 39.85px;
+    text-align: left;
+    color: var(--color-black);
+}
+
+.diam {
+    font-family: "Noto Serif",serif;
+    font-size: var(--fs-16);
+    color: var(--color-black);
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: left;
+}
+.childslider{
+    width: 380px;
+    height: 257px;
+    padding: 20px;
+}
+.br-top{
+    border-top: none;
+}
