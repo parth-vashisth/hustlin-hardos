@@ -21,9 +21,9 @@
     --fs-18: 18px;
     --fs-24: 24px;
     --fs-36: 36px;
-    --fs-72: 72px;
+    --fs-72: 50px;
     --fs-80: 80px;
-    --fs-157: 157px;
+    --fs-157: 90px;
     /* --color-- */
     --color-brown: #70675f;
     --color-black: #000000;
@@ -155,7 +155,7 @@
     font-family: ModernoFBComp;
     font-size: var(--fs-157);
     font-weight: 400;
-    line-height: 188.4px;
+    line-height: 100px;
     text-align: center;
     color: var(--color-black);
 }
@@ -165,7 +165,7 @@
     font-family: "Noto Serif", serif;
     font-size: var(--fs-72);
     font-weight: 400;
-    line-height: 100.8px;
+    line-height: 61.8px;
     text-align: left;
     color: var(--color-black);
 }
@@ -199,7 +199,8 @@
 }
 
 .pd {
-    /* width: 100%; */
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 43px;
     padding-right: 43px;
 }
@@ -249,10 +250,6 @@
 /* ----------minting----------- */
 .mt-88 {
     margin-top: 88px;
-}
-
-.pr-107 {
-    padding-right: 107px;
 }
 
 .outline-black {
@@ -349,4 +346,211 @@
     line-height: 26.57px;
     text-align: left;
     color: var(--color-black);
+}
+
+/* ------timeline------- */
+
+.timeline {
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 400px;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: var(--color-black);
+    top: 95px;
+    bottom: 70px;
+    left: 30px;
+    margin-left: -3px;
+}
+
+.right-box {
+    position: relative;
+    width: 100%;
+    left: 0;
+}
+
+.right-box::after {
+    content: "";
+    width: 59px;
+    height: 59px;
+    position: absolute;
+    background-image: url(../images/png/timline-circle.jpg);
+    border-radius: 50%;
+    top: 14px;
+    left: 1px;
+    z-index: 1;
+}
+
+.left-box {
+    position: relative;
+    width: 100%;
+    left: 0;
+}
+
+.left-box::after {
+    content: "";
+    width: 59px;
+    height: 59px;
+    position: absolute;
+    background-image: url(../images/png/timline-circle.jpg);
+    border-radius: 50%;
+    top: 6px;
+    left: 1px;
+    z-index: 1;
+}
+
+.left-box {
+    padding: 10px 0px 10px 70px;
+
+}
+
+.right-box {
+    padding: 10px 0px 10px 70px;
+
+}
+
+.right-box .time-para {
+    max-width: 495px;
+}
+
+.left-box.time-para {
+    max-width: 460px;
+}
+
+.left-box.time-head2 {
+    max-width: 460px;
+}
+
+.max-w-495 {
+    max-width: 495px;
+}
+
+.time-para {
+    font-family: 'Noto Serif', sans-serif;
+    font-size: var(--fs-16);
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: left;
+}
+
+.time-head {
+    font-family: 'Noto Serif', sans-serif;
+    font-size: var(--fs-14);
+    font-weight: 400;
+    line-height: 19.07px;
+    text-align: left;
+}
+
+.time-head2 {
+    font-family: 'Noto Serif', sans-serif;
+    font-size: var(--fs-36);
+    font-weight: 600;
+    line-height: 39.85px;
+    text-align: left;
+}
+
+.arrow {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 13px;
+    bottom: 56px;
+}
+
+@media (min-width:576px) {
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        background-color: var(--color-black);
+        top: 95px;
+        bottom: 70px;
+        left: 50%;
+        margin-left: -3px;
+    }
+
+    .left-box::after {
+        content: "";
+        width: 59px;
+        height: 59px;
+        position: absolute;
+        background-image: url(../images/png/timline-circle.jpg);
+        border-radius: 50%;
+        top: 6px;
+        right: -28px;
+        z-index: 1;
+        left: unset;
+    }
+
+    .right-box::after {
+        content: "";
+        width: 59px;
+        height: 59px;
+        position: absolute;
+        background-image: url(../images/png/timline-circle.jpg);
+        border-radius: 50%;
+        top: 14px;
+        left: -31px;
+        z-index: 1;
+    }
+
+    .right-box {
+        position: relative;
+        width: 50%;
+        left: 50%;
+    }
+
+    .left-box {
+        position: relative;
+        width: 50%;
+        left: 0;
+    }
+
+    .left-box {
+        padding: 10px 36px 10px 10px;
+    }
+
+    .arrow {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 50%;
+        bottom: 57px;
+        transform: translateX(-57%);
+    }
+
+
+}
+
+@media (min-width:992px) {
+    :root {
+        --fs-14: 14px;
+        --fs-16: 16px;
+        --fs-18: 18px;
+        --fs-24: 24px;
+        --fs-36: 36px;
+        --fs-72: 72px;
+        --fs-80: 80px;
+        --fs-157: 157px;
+    }
+
+    .big-head {
+        line-height: 188.8px;
+    }
+
+    .break {
+        line-height: 100.8px;
+    }
+
+    .pr-107 {
+        padding-right: 107px;
+    }
+
+    .br-lg-lft {
+        border-left: none;
+    }
 }
