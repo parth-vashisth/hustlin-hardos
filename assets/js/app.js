@@ -25,9 +25,9 @@ $('.parentslider').slick({
         }
     ]
 });
-const btnsub = document.querySelector(".minus");
-const btnadd = document.querySelector(".plus");
-const number = document.querySelector(".hndrd");
+const btnsub = document.querySelector(".sub-btn");
+const btnadd = document.querySelector(".add-btn");
+const number = document.querySelector(".number");
 
 btnsub.addEventListener("click", function () {
     number.innerHTML = +number.innerHTML - 1;
