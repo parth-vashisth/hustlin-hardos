@@ -38,25 +38,25 @@
     background: #000000;
 }
 
-.header-1 marquee div {
+.header-1 topslide div {
     min-height: 52px;
 }
 
-.marquee {
+.topslide {
     margin: 0 auto;
     white-space: nowrap;
     overflow: hidden;
     box-sizing: border-box;
 }
 
-.marquee div {
+.topslide div {
     display: inline-block;
     padding-left: 100%;
     text-indent: 0;
-    animation: marquee 15s linear infinite;
+    animation: topslide 15s linear infinite;
 }
 
-.marquee div:hover {
+.topslide div:hover {
     animation-play-state: paused
 }
 
@@ -68,7 +68,7 @@
     line-height: 21.79px;
 }
 
-.border-red {
+.br-red {
     border: 1px solid #FF0000;
     border-radius: 5px;
     padding: 3px;
@@ -76,7 +76,7 @@
     color: #FF0000;
 }
 
-.border-y {
+.br-y {
     border: 1px solid #FFD600;
     border-radius: 5px;
     padding: 3px;
@@ -85,7 +85,7 @@
 }
 
 /* Make it move */
-@keyframes marquee {
+@keyframes topslide {
     0% {
         transform: translate(0, 0);
     }
