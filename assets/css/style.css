@@ -141,10 +141,7 @@
 .brdr1 {
     border-left: 3px solid black;
     border-right: 3px solid black;
-    /* padding-top: 10px;
-    padding-bottom: 10px; */
     padding: 10px;
-    border-collapse: collapse;
 }
 
 .br-lft {
@@ -168,6 +165,7 @@
     line-height: 61.8px;
     text-align: left;
     color: var(--color-black);
+    text-shadow: 3px 3px 3px var(--color-black);
 }
 
 .date {
@@ -482,9 +480,11 @@
     color: var(--color-brown);
     margin-top: 24px;
 }
-.clr-b{
+
+.clr-b {
     color: var(--color-slati) !important;
 }
+
 .crypto {
     font-family: "Noto Serif", serif;
     font-size: var(--fs-16);
@@ -495,7 +495,85 @@
     margin-top: 16px;
 }
 
+/* ----accordian---- */
+.img-1 {
+    box-shadow: -2px -2px 2px 0px #0000004D inset;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px 0px #FFFFFF inset;
+}
 
+.accordion-heading {
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.nft {
+    font-family: "Noto Serif", serif;
+    font-size: var(--fs-24);
+    font-weight: 600;
+    line-height: 32.69px;
+    text-align: left;
+}
+
+.text-1 {
+    font-family: "Noto Serif",serif;
+    font-size: var(--fs-16);
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.accordion {
+    position: relative;
+    overflow: hidden;
+    border-top: 2px solid #000000;
+}
+
+.text-p {
+    position: absolute;
+    top: -600%;
+    left: 0%;
+    transition: all 0.3s ease-in-out;
+}
+
+.acc-icon {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+
+.line1 {
+    display: flex;
+}
+
+.line2 {
+    display: none;
+}
+
+.max-w-438 {
+    max-width: 438px;
+}
+
+.acc-active {
+    .text-p {
+        position: unset;
+    }
+
+    .line2 {
+        display: flex;
+    }
+
+    .line1 {
+        display: none;
+    }
+}
 
 
 @media (min-width:576px) {
@@ -560,6 +638,15 @@
         transform: translateX(-57%);
     }
 
+
+}
+
+@media (min-width:768px) {
+    .brdr1-md {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        padding: 10px;
+    }
 
 }
 
