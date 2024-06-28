@@ -1,3 +1,8 @@
+let navicon = document.querySelector(".navicon");
+let lgview = document.querySelector(".lg-view");
+navicon.addEventListener("click", () => {
+    lgview.classList.toggle("show");
+});
 $('.parentslider').slick({
     dots: false,
     infinite: true,
@@ -31,7 +36,7 @@ $('.parentslide').slick({
     prevArrow: ".prev-btn",
     nextArrow: ".next-btn",
     speed: 300,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     slidesToShow: 2,
     slidesToScroll: 1,
